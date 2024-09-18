@@ -1,2 +1,10 @@
 <app-header></app-header>
-<app-filter-addition></app-filter-addition>
+<div class="container" *ngIf="userData$ | async as userData">
+  <app-filter-addition></app-filter-addition>
+  <div style="display: flex; flex-wrap: wrap;">
+    <ng-container *ngFor="let user of userData">
+      <app-real-estate-card [data]="user"></app-real-estate-card>
+    </ng-container>
+  </div>
+</div>
+

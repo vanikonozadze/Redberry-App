@@ -1,0 +1,70 @@
+.container {
+    width: 400px;
+    height: auto;
+    border: 1px solid #DBDBDB;
+    border-radius: 20px;
+    box-shadow: 2px 4px 4px 0px rgba(12, 22, 56, 0.1);
+
+  &-image{
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
+  }
+
+  &__title{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0 0 30px;
+
+    &-price{
+        font-size: 26px;
+        font-weight: bold;
+    }
+
+    &__address{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin: 5px 0 20px 0;
+
+        &-icon{
+            width: 15px;
+            height: 20px;
+        }
+    }
+  }
+
+  &__details {
+    display: flex;
+    gap: 30px;
+    margin: 0 0 20px 30px;
+
+    img{
+        width: 20px;
+        height: 20px;
+    }
+
+    &__room {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    &__size {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    &__code {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+  }
+}
+
+sup {
+  vertical-align: middle;
+  font-size: 10px;
+}
